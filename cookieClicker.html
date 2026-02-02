@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Pontiff Cookie Clicker</title>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 80px; background-color: #fff3e0;">
+<body style="font-family:sans-serif; text-align:center; padding-top:80px; background-color:#fff3e0;">
 
   <h1>🍪 Pontiff Cookie Clicker</h1>
 
-  <button id="cookieBtn" style="font-size: 2rem; padding: 10px 20px;">
+  <button id="cookieBtn" style="font-size:2rem; padding:10px 20px;">
     🍪 Click
   </button>
 
@@ -24,9 +24,11 @@
 
     cookieBtn.addEventListener("click", function () {
       clickCount++;
+
+      console.log("clicked:", clickCount);
+
       counterDisplay.textContent = "Clicks: " + clickCount;
 
-      // Milestones
       if (clickCount === 10) {
         messageDisplay.textContent = "You’re just getting started 🍪";
         document.body.style.backgroundColor = "#fff9c4";
@@ -42,8 +44,8 @@
       }
     });
   </script>
-
 </body>
 </html>
+
 
 
