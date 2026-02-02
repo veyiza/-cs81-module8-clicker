@@ -1,50 +1,49 @@
-<h1>🍪 Pontiff Cookie Clicker</h1>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cookie Clicker</title>
+  <title>Pontiff Cookie Clicker</title>
 </head>
 <body style="font-family: sans-serif; text-align: center; padding-top: 80px; background-color: #fff3e0;">
 
-  <h1>🍪 Cookie Clicker</h1>
-
+  <h1>🍪 Pontiff Cookie Clicker</h1>
 
   <button id="cookieBtn" style="font-size: 2rem; padding: 10px 20px;">
-    🍪 Click 
+    🍪 Click
   </button>
 
   <p id="counter">Clicks: 0</p>
-
   <p id="message">Start clicking the cookie!</p>
-<script>
-  const cookieBtn = document.getElementById("cookieBtn");
-  const counterDisplay = document.getElementById("counter");
-  const messageDisplay = document.getElementById("message");
 
-  let clickCount = 0;
+  <script>
+    const cookieBtn = document.getElementById("cookieBtn");
+    const counterDisplay = document.getElementById("counter");
+    const messageDisplay = document.getElementById("message");
 
-  cookieBtn.addEventListener("click", function () {
-    clickCount++;
+    let clickCount = 0;
 
-    counterDisplay.textContent = "Clicks: " + clickCount;
-  });
+    cookieBtn.addEventListener("click", function () {
+      clickCount++;
+      counterDisplay.textContent = "Clicks: " + clickCount;
 
-   // Milestones
-    if (clickCount === 10) {
-  messageDisplay.textContent = "You’re just getting started 🍪";
-  document.body.style.backgroundColor = "#fff9c4";
-} else if (clickCount === 25) {
-  messageDisplay.textContent = "Wow, that’s a lot of cookies!";
-  document.body.style.backgroundColor = "#ffe0b2";
-} else if (clickCount === 50) {
-  messageDisplay.textContent = "Are you still clicking?";
-  document.body.style.backgroundColor = "#ffccbc";
-} else if (clickCount === 100) {
-  messageDisplay.textContent = "You win! Maybe take a break 😅";
-  document.body.style.backgroundColor = "#c8e6c9";
-}
+      // Milestones
+      if (clickCount === 10) {
+        messageDisplay.textContent = "You’re just getting started 🍪";
+        document.body.style.backgroundColor = "#fff9c4";
+      } else if (clickCount === 25) {
+        messageDisplay.textContent = "Wow, that’s a lot of cookies!";
+        document.body.style.backgroundColor = "#ffe0b2";
+      } else if (clickCount === 50) {
+        messageDisplay.textContent = "Are you still clicking?";
+        document.body.style.backgroundColor = "#ffccbc";
+      } else if (clickCount === 100) {
+        messageDisplay.textContent = "You win! Maybe take a break 😅";
+        document.body.style.backgroundColor = "#c8e6c9";
+      }
+    });
+  </script>
 
-</script>
-  
 </body>
 </html>
+
+
