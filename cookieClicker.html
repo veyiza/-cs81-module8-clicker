@@ -1,3 +1,4 @@
+<h1>🍪 Pontiff Cookie Clicker</h1>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -30,15 +31,18 @@
 
    // Milestones
     if (clickCount === 10) {
-      messageDisplay.textContent = "You’re just getting started 🍪";
-    } else if (clickCount === 25) {
-      messageDisplay.textContent = "Wow, that’s a lot of cookies!";
-    } else if (clickCount === 50) {
-      messageDisplay.textContent = "Are you still clicking?";
-    } else if (clickCount === 100) {
-      messageDisplay.textContent = "You win! Maybe take a break 😅";
-    }
-  });
+  messageDisplay.textContent = "You’re just getting started 🍪";
+  document.body.style.backgroundColor = "#fff9c4";
+} else if (clickCount === 25) {
+  messageDisplay.textContent = "Wow, that’s a lot of cookies!";
+  document.body.style.backgroundColor = "#ffe0b2";
+} else if (clickCount === 50) {
+  messageDisplay.textContent = "Are you still clicking?";
+  document.body.style.backgroundColor = "#ffccbc";
+} else if (clickCount === 100) {
+  messageDisplay.textContent = "You win! Maybe take a break 😅";
+  document.body.style.backgroundColor = "#c8e6c9";
+}
 
 </script>
   
