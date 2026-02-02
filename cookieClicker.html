@@ -15,6 +15,19 @@
   <p id="counter">Clicks: 0</p>
 
   <p id="message">Start clicking the cookie!</p>
+<script>
+  const cookieBtn = document.getElementById("cookieBtn");
+  const counterDisplay = document.getElementById("counter");
+  const messageDisplay = document.getElementById("message");
 
+  let clickCount = 0;
+
+  cookieBtn.addEventListener("click", function () {
+    clickCount++;
+
+    counterDisplay.textContent = "Clicks: " + clickCount;
+  });
+</script>
+  
 </body>
 </html>
